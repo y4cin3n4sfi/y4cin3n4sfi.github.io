@@ -1,55 +1,74 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f9;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .quiz-container {
   background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 420px;
   text-align: center;
+  animation: fadeIn 0.8s ease;
 }
 
 h2 {
   margin-bottom: 20px;
+  color: #333;
 }
 
 .option {
   display: block;
-  margin: 8px 0;
-  padding: 10px;
-  background: #f0f0f0;
-  border-radius: 8px;
+  margin: 10px 0;
+  padding: 12px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  border-radius: 12px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.2s ease, background 0.3s ease;
   width: 100%;
   border: none;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .option:hover {
-  background: #ddd;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  transform: scale(1.03);
 }
 
 #nextBtn {
-  margin-top: 15px;
-  padding: 10px 20px;
+  margin-top: 18px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 8px;
-  background: #007bff;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   display: none;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+#nextBtn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 #result {
   margin-top: 20px;
   font-weight: bold;
+  font-size: 16px;
+  color: #222;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
