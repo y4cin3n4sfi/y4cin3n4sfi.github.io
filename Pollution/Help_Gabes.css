@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Sections Smoothed */
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 10vw;
+    transition: background 1.5s ease, color 1.2s ease;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #fff8db;
+}
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+.hero-text h1 {
+    font-size: 5rem;
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+}
+.hero-text p {
+    font-size: 1.4rem;
+}
+.amazigh {
+    font-size: 4rem;
+    color: #d9b95f; /* gold */
+}
+
+/* Rolex vibe */
+.luxury {
+    background: #faf7ef;
+    color: #2d2b26;
+    text-align: center;
+}
+.luxury h2 { font-size: 3rem; font-family: "Marcellus"; }
+
+/* Transition desert → grey */
+.transition {
+    background: linear-gradient(#faf7ef, #a39c81, #4d5043);
+    color: #eee0c4;
+}
+
+/* Dark zone */
+.dark-section {
+    background: #050805;
+    color: #a8e76c; /* radioactive green but soft */
+}
+.media-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+}
+.media-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    filter: contrast(130%) brightness(60%) saturate(140%);
+}
+
+/* CTA */
+.cta {
+    background: #12210f;
+    color: #b6ff9a;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 8px;
+}
+input, textarea {
+    padding: 12px;
+    background: #081207;
+    border: 1px solid #355a30;
+    color: white;
+}
+button {
+    background: #8aff63;
+    padding: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.dark-gallery {
+    position: relative;
+    background: black;
+    color: #b4ff87;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery-title {
+    text-align: center;
+    padding: 100px 20px 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.gallery-title h2 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-family: "Marcellus", serif;
+}
+
+.gallery-title p {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+/* Scrolling gallery track */
+.gallery-track {
+    width: 100vw;
+}
+
+.frame {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame img, .frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%) contrast(130%);
+    transform: scale(1.12);
+}
+
+/* bottom text */
+.warning-text {
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Marcellus", serif;
+    opacity: 0;
+}
