@@ -30,17 +30,14 @@ html {
    HERO SECTION
 ========================= */
 .hero {
-  position: relative;
-  color: #fff8db;
+  width: 100%;
   height: 100vh;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* makes the image fill without distortion */
-    object-position: center; 
-    display: block;
+  position: relative;
+  background-image: url("./media/manzel.png");
+  background-size: cover;   /* BEST quality scaling */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* or fixed if you want parallax */
 }
 
 .hero-text {
@@ -462,6 +459,7 @@ html {
     transform: scale(1.2);
 
 }
+
 
 
 
